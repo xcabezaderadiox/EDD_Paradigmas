@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+def saludar(x):
+    saludo = 'Hola que hermoso sos ' + x
+    print(saludo)
+
+nombre = input('Nombre: ')
+saludar(nombre)

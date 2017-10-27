@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+
+def Numero(x):
+
+    if x % 2 == 0 :
+        print (str('El numero ingresado es par'))
+    else: 
+        print (str('El numero igresado es impar')) 
+ 
+Numero_ingresado = int(input('Ingrese el numero: '))
+Numero(Numero_ingresado)

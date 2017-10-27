@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+
+print ('BIENVENID@')
+
+def Salario(a,b,c):
+    DESCUENTO_TOTAL = a - c
+    SALARIO_FINAL = DESCUENTO_TOTAL + b
+
+    print ('Su salario final sera de: ')
+    print (str(SALARIO_FINAL))
+    print ('GRACIAS!!!')
+
+SALARIO = int(input('Hola por favor ingrese su salario:   '))
+DEPOSITO_EN_CUENTA = int(input('Por favor ingrese el monto de su deposito: '))
+DESCUENTO_DE_SAR = int(input('Por favor ingrese el monto que SAR deposito en su cuenta: '))
+Salario(SALARIO,DEPOSITO_EN_CUENTA,DESCUENTO_DE_SAR)
+
+print ()
+print ()
+print ()
+print ('***Desing by @xcabezaderadiox***')

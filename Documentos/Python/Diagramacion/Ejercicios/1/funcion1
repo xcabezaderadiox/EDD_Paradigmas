@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+
+def Precio():
+    global x
+    TOTAL = str((x * 0.21) + x)
+    print (TOTAL)
+
+x = int(input('Precio inicial: '))
+Precio()
+

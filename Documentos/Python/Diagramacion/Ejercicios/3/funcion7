@@ -1,0 +1,26 @@
+#!/usr/bin/python3
+
+print ('BIENVENID@')
+
+def Precio(a,b):
+    if a < 5:
+        PRECIO_FINAL = (b -(b * 0.10)) 
+
+    elif a > 5 and COMPRA < 10:
+        PRECIO_FINAL = (b -(b * 0.20))
+    
+    else:
+        PRECIO_FINAL = (b-(b * 0.40))    
+
+    print ('Su valor final de compra es de: ')   
+    print (PRECIO_FINAL)
+    print ('GRACIAS!!!')
+
+COMPRA = int(input('Hola por favor ingrese su cantidad de PC compradas:   '))
+PC = 1600
+Precio(COMPRA,PC)
+
+print ()
+print ()
+print ()
+print ('***Desing by @xcabezaderadiox***')

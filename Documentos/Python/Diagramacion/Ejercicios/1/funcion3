@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+
+def Numero_mayor(x,y):
+    if x > y :
+        print (x)
+    else: 
+        print (y)
+
+Numero_uno = int(input('Inserte primer numero: '))
+Numero_dos = int(input('Inserte segundo numero: '))
+Numero_mayor(Numero_uno,Numero_dos)

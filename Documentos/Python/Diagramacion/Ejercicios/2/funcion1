@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+def Ganancia(Monto):
+
+    Ganancia = Monto * 0.02
+    print (Monto + Ganancia)
+
+Monto = int(input('Dinero mensual a depositar: '))
+Ganancia(Monto)

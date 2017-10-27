@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+
+def Sueldo(x,y):
+
+    Comision_total = (x / 100 ) * y
+    print ('VALOR DE COMISIONES')
+    print (Comision_total)
+    Sueldo_mensual = x + Comision_total
+    print ('SUELDO MENSUAL')
+    print (Sueldo_mensual)
+
+Sueldo_base = int(input('Ingrese su sueldo base: '))
+Ventas_realizadas_en_el_mes = int(input('Ingrese cuantas ventas realizo: '))
+Sueldo(Sueldo_base,Ventas_realizadas_en_el_mes)
+
+
+

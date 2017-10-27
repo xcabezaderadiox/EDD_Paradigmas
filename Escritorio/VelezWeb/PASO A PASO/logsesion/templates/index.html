@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+
+{% block page_content %}
+<div class="page-header">    
+    <font color="white"><h1> Bienvenido a el Fortin de Velez! </h1> </font>
+    <p>Esta página se accedió en la siguiente fecha y hora: <strong>{{ moment(fecha_actual).format('LLLL') }}.</strong></p>
+    <p>Eso fue <em>{{ moment(fecha_actual).fromNow(refresh=True) }}</em></p>
+</div>
+{% endblock %}

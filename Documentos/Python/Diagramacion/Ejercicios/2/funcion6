@@ -1,0 +1,35 @@
+#!/usr/bin/python3
+
+print ('BIENVENID@')
+
+
+print ()
+def Inversiones(a,b,c):
+    INVERSION_TOTAL = (a + b + c)
+    print ('La inversion total es de: ')
+    print (str(INVERSION_TOTAL))
+    print ()
+    PORCENTAJE_INVERSION_A = (( a / INVERSION_TOTAL) *100)
+    print ('El porcentaje de inversion del socio A es de: ')
+    print (PORCENTAJE_INVERSION_A)
+    print ()
+    PORCENTAJE_INVERSION_B = (( b / INVERSION_TOTAL) *100)
+    print ('El porcentaje de inversion del socio B es de: ')
+    print (PORCENTAJE_INVERSION_B)
+    print ()
+    PORCENTAJE_INVERSION_C = (( c / INVERSION_TOTAL) *100)
+    print ('El porcentaje de inversion del socio C es de: ')
+    print (PORCENTAJE_INVERSION_C)
+
+INVERSION_SOCIO_A = int(input('El socio A invierte: $'))
+INVERSION_SOCIO_B = int(input('El socio B invierte: $'))
+INVERSION_SOCIO_C = int(input('El socio C invierte: $'))
+Inversiones(INVERSION_SOCIO_A,INVERSION_SOCIO_B,INVERSION_SOCIO_C)
+
+print ()
+print ('GRACIAS!!!')
+
+print ()
+print ()
+print ()
+print ('***Desing by @xcabezaderadiox***')

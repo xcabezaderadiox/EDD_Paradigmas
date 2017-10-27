@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+def Descuento(a,b):
+
+    if b > 74:
+        Descuento = a * 0.20
+    else:
+        Descuento = a * 0.15
+        print (str(Descuento))
+
+Valor_compra = int(input('Ingresar valor: '))
+Numero_al_azar = int(input('Elija numero: '))
+Descuento(Valor_compra,Numero_al_azar)
+
+

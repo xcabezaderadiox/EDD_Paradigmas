@@ -1,0 +1,54 @@
+#!/usr/bin/python3
+
+print ('BIENVENID@')
+
+def Guita(a,b,c,d,e):
+
+    if a < 0:
+        PRESUPUESTO = a + d
+        print ('Su presupuesto sera de : ')
+        print (PRESUPUESTO)
+        RESTO = PRESUPUESTO - b - c
+        INSUMOS = RESTO / 2
+        INCENTIVO = RESTO / 2
+        print ('El valor de sus insumos e incentivo laboral seran: ')
+        print (INSUMOS)
+        print (INCENTIVO) 
+
+    elif a > 0 and a < 20000:
+        PRESUPUESTO = a + e
+        print ('Su presupuesto sera de: ')
+        print (PRESUPUESTO)
+        RESTO = PRESUPUESTO - b - c
+        INSUMOS = RESTO / 2
+        INCENTIVO = RESTO / 2
+        print ('El valor de sus insumos e incentivo laboral seran: ')
+        print (INSUMOS)
+        print (INCENTIVO) 
+    
+    else:
+        PRESTAMO = 0
+        PRESUPUESTO = a + d
+        print ('Su presupuesto sera de: ')
+        print (PRESUPUESTO)
+        RESTO = PRESUPUESTO - b - c
+        INSUMOS = RESTO / 2
+        INCENTIVO = RESTO / 2
+        print ('El valor de sus insumos e incentivo laboral seran: ')
+        print (INSUMOS)
+        print (INCENTIVO)     
+
+        print ('GRACIAS!!!')
+
+CAPITAL = int(input('Hola por favor ingrese su capital actual:   '))
+PCS = 5000
+MOBILIARIO = 2000
+PRESTAMO = 10000
+PRESTAMO_DOS = 20000
+Guita(CAPITAL,PCS,MOBILIARIO,PRESTAMO,PRESTAMO_DOS)
+
+
+print ()
+print ()
+print ()
+print ('***Desing by @xcabezaderadiox***')

@@ -1,0 +1,32 @@
+{% extends "basefortinero.html" %}
+
+{% block title %}Equipo{% endblock %}
+
+{% block page_content %}
+
+<form method="POST" action="/filtro/equipo"> 
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"style="background-color: grey">FIXTURE</div>
+
+  <table class="table" style="background-color: black">
+  <tr>
+    <td><font color="white">{{encabezado[0]}}</font></td>
+    <td><font color="white">{{encabezado[1]}}</font></td>
+    <td><font color="white">{{encabezado[2]}}</font></td>
+  </tr>
+{% for linea in resultado %}
+  <tr>
+    <td><font color="white">{{linea[0]}}</font></td>
+    <td><font color="white">{{linea[1]}}</font></td>
+    <td><font color="white">{{linea[2]}}</font></td>
+  </tr>
+{% endfor %}
+  </table>
+</form>
+
+{% endblock %}
+
+
+
+

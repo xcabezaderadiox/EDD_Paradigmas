@@ -1,0 +1,5 @@
+Numero_uno = int (input( 'Inserte primer nuemero: '))
+Numero_dos = int (input( 'Inserte segundo numero: '))
+Numero_tres = int (input( 'Inserte tercer numero: '))
+Promedio = ((Numero_uno + Numero_dos + Numero_tres) / 3)
+print (str(Promedio))

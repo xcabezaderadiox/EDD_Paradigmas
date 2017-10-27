@@ -1,0 +1,74 @@
+#!/usr/bin/python3
+
+print ('BIENVENID@ ALUMN@')
+
+def Notas (a,b,c,d):
+
+    print ('Promedio de TPS')
+    PROMEDIO_DE_TPS = (b + c + d) / 3
+    print (str(PROMEDIO_DE_TPS))
+    NOTA_FINAL_ANALISIS = (PROMEDIO_DE_TPS * 0.10) + (a * 0.90)
+    print ('El promedio final de Analisis es de: ')
+    print (str(NOTA_FINAL_ANALISIS))
+    print ('Promedio de TPS')
+    PROMEDIO_DE_TPS = (b + c) / 3
+    print (str(PROMEDIO_DE_TPS))
+    NOTA_FINAL_ALGEBRA = (PROMEDIO_DE_TPS * 0.20) + (a * 0.80)
+    print ('El promedio final de Algebra es de: ')
+    print (str(NOTA_FINAL_ALGEBRA))
+    print ('Promedio de TPS')
+    PROMEDIO_DE_TPS = (b + c + d) / 3
+    print (str(PROMEDIO_DE_TPS))
+    NOTA_FINAL_PROGRAMACION = (PROMEDIO_DE_TPS * 0.10) + (a * 0.90)
+    print ('El promedio final de Programacion es de: ')
+    print (str(NOTA_FINAL_PROGRAMACION))
+    print ()
+    print ('El promedio general sera de: ')
+    PROMEDIO_GENERAL = (NOTA_FINAL_ALGEBRA + NOTA_FINAL_ANALISIS + NOTA_FINAL_PROGRAMACION) / 3
+    print (str(PROMEDIO_GENERAL))
+    print ()
+    if PROMEDIO_GENERAL > 6:
+        print ('Felicitaciones!!!!!!')
+    else:
+        print ('A estudiar mas por favor Alumno')
+
+
+
+print ('Estas son las siguientes notas en Analisis: ')
+print ('Nota examen')
+NOTA_EXAMEN = int(input())
+print ('TP NUMERO 1')
+TP1 = int(input())
+print ('TP NUMERO 2')
+TP2 = int(input())
+print ('TP NUMERO 3')
+TP3 = int(input())
+
+print ()
+print ('Estas son las siguientes notas en Algebra: ')
+print ('Nota examen')
+NOTA_EXAMEN = int(input())
+print ('TP NUMERO 1')
+TP1 = int(input())
+print ('TP NUMERO 2')
+TP2 = int(input())
+
+print ()
+print ('Estas son las siguientes notas en Programacion: ')
+print ('Nota examen')
+NOTA_EXAMEN = int(input())
+print ('TP NUMERO 1')
+TP1 = int(input())
+print ('TP NUMERO 2')
+TP2 = int(input())
+print ('TP NUMERO 3')
+TP3 = int(input())
+Notas(NOTA_EXAMEN,TP1,TP2,TP3)
+
+print ()
+print ('GRACIAS')
+
+print ()
+print ()
+print ()
+print ('***Desing by @xcabezaderadiox***')

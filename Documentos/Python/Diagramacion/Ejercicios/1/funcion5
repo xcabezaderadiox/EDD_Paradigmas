@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+def Numero(Numero_ingresado):
+
+    if Numero_ingresado > 0:
+        print (str(Numero_ingresado))
+    else: 
+        print (str('ERROR:Numero es negativo'))
+
+Numero_ingresado = int(input('Por favor ingrese su numero: '))
+Numero(Numero_ingresado)

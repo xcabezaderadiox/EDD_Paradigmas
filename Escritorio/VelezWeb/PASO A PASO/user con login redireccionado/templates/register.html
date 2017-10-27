@@ -1,0 +1,24 @@
+<form method="POST"accion="/formulario2">
+
+
+<form action="/index" method="POST">
+    {{ form.csrf_token }}
+
+<div class="flashes">
+  {% for message in get_flashed_messages() %}
+    {{ message }}
+  {% endfor %}
+</div>
+
+    
+
+    {{ form.usuario.label }}
+    {{ form.usuario(size=20) }}
+
+    {{ form.password1.label }} 
+    {{ form.password1(size=20) }}
+    
+    {{ form.password2.label }} 
+    {{ form.password2(size=20) }}
+    <input type="submit" value="Validacion">
+</form>

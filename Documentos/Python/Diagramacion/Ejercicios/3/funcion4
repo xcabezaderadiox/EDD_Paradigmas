@@ -1,0 +1,26 @@
+#!/usr/bin/python3
+
+print ('BIENVENID@')
+
+def Cuota(a,b):
+
+    if a > 9:
+        DESCUENTO = b * 0.30
+        CUOTA = b - DESCUENTO
+    else: 
+        IVA = b * 0.21
+        IVA_10 = IVA * 0.10
+        CUOTA = b + IVA_10
+
+    print ('La cuota sera de: ')
+    print (str(CUOTA))
+
+PROMEDIO = int(input('Hola por favor ingrese su promedio general:   '))
+MATRICULA = int(input('Por favor ingrese el monto de su matricula: '))
+Cuota(PROMEDIO,MATRICULA)
+print ('GRACIAS!!!')
+
+print ()
+print ()
+print ()
+print ('***Desing by @xcabezaderadiox***')

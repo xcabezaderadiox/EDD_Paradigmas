@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+
+
+def Calificaciones(a,b,c,d,e):
+
+    PROMEDIO_DE_PARCIALES = ((a + b + c) / 3)
+    print ('EL PROMEDIO DE LOS PARCIALES FUE: ')
+    print (PROMEDIO_DE_PARCIALES)
+    CALIFICACION = ((PROMEDIO_DE_PARCIALES * 0.55) + (d * 0.30) + (e * 0.15))
+    print ('SU CALIFICACION FINAL SERA: ')
+    print (CALIFICACION)
+
+Parcial_uno = int(input('La nota del primer parcial fue: '))
+Parcial_dos = int(input('La nota del segundo parcial fue: '))
+Parcial_tres = int(input('La nota del tercer parcial fue: '))
+EXAMEN_FINAL = int(input('La nota del examen final fue: '))
+TP_FINAL = int(input('La nota del trabajo practico final fue: '))
+
+Calificaciones(Parcial_uno,Parcial_dos,Parcial_tres,EXAMEN_FINAL,TP_FINAL)
