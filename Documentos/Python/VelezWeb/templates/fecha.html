@@ -14,13 +14,17 @@
     <td><font color="white">{{head[0]}}</font></td>
     <td><font color="white">{{head[1]}}</font></td>
     <td><font color="white">{{head[2]}}</font></td>
+    <td><font color="white">{{head[3]}}</font></td>
   </tr>
 {% for linea in date %}
   <tr>
     <td><font color="white">{{linea[0]}}</font></td>
     <td><font color="white">{{linea[1]}}</font></td>
     <td><font color="white">{{linea[2]}}</font></td>
+    <td><font color="white">{{linea[3]}}</font></td>
   </tr>
+{% else %}
+    <td><font color="white">No hay resultados</font></td>
 {% endfor %}
   </table>
 </form>

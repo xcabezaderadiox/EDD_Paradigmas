@@ -28,6 +28,22 @@
     {{ consulta_fecha.fecha.label }} {{ consulta_fecha.fecha(size=20) }}
     <input type="submit" value="Filtre">
 {% endif %}
+{% if consulta_goles %}
+<form method="POST" action="/filtro/goles">
+    {{ consulta_goles.csrf_token }}
+    {{ consulta_goles.goles.label }} {{ consulta_goles.goles(size=20) }}
+    <input type="submit" value="Filtre">
+{% endif %}
+{% if listaordenada %}
+    {% for i in listaordenada %}
+    <tr>
+        <td><font color="white">{{i[0]}}</font></td>
+        <td><font color="white">{{i[1]}}</font></td>
+        <td><font color="white">{{i[2]}}</font></td>
+        <td><font color="white">{{i[3]}}</font></td>
+    </tr>
+    {% endfor %}
+{% endif %}
 </table>
 {% endblock %}
 
