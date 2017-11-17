@@ -1,0 +1,36 @@
+{% extends "basefortinero.html" %}
+
+{% block title %}Goles{% endblock %}
+
+{% block page_content %}
+
+<form method="POST" action="/filtro/goles"> 
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"style="background-color: grey">FIXTURE</div>
+
+  <table class="table" style="background-color: black">
+  <tr>
+    <td><font color="white">{{cabezazo[0]}}</font></td>
+    <td><font color="white">{{cabezazo[1]}}</font></td>
+    <td><font color="white">{{cabezazo[2]}}</font></td>
+    <td><font color="white">{{cabezazo[3]}}</font></td>
+  </tr>
+{% for linea in goal %}
+  <tr>
+    <td><font color="white">{{linea[0]}}</font></td>
+    <td><font color="white">{{linea[1]}}</font></td>
+    <td><font color="white">{{linea[2]}}</font></td>
+    <td><font color="white">{{linea[3]}}</font></td>
+  </tr>
+{% else %}
+    <td><font color="white">No hay resultados</font></td>
+{% endfor %}
+  </table>
+</form>
+
+{% endblock %}
+
+
+
+

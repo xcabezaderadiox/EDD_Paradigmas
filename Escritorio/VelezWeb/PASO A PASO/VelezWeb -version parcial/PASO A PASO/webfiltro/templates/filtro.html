@@ -1,0 +1,36 @@
+{% extends "basefortinero.html" %}
+
+{% block title %}Fixture{% endblock %}
+
+{% block page_content %}
+
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"style="background-color: grey">FIXTURE</div>
+
+<table class="table" style="background-color: black">
+{% if consulta %}
+<form method="POST" action="/filtro/cancha">
+    {{ consulta.csrf_token }}
+    {{ consulta.cancha.label }} {{ consulta.cancha(size=20) }}
+    <input type="submit" value="Filtre">
+{% endif %}
+{% if consulta_equipo %}
+<form method="POST" action="/filtro/equipo">
+    {{ consulta_equipo.csrf_token }}
+    {{ consulta_equipo.equipo.label }} {{ consulta_equipo.equipo(size=20) }}
+    <input type="submit" value="Filtre">
+{% endif %}
+{% if consulta_fecha %}
+<form method="POST" action="/filtro/fecha">
+    {{ consulta_fecha.csrf_token }}
+    {{ consulta_fecha.fecha.label }} {{ consulta_fecha.fecha(size=20) }}
+    <input type="submit" value="Filtre">
+{% endif %}
+</table>
+{% endblock %}
+
+
+
+

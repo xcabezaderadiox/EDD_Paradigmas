@@ -1,0 +1,12 @@
+Fixture del torneo
+EQUIPO,FECHA,CANCHA,GOLES
+Ferro,Fecha 1,Local,3
+River,Fecha 2,Visitante,4
+Boca,Fecha 3,Local,2
+Gimnasia,Fecha 4,Visitante,1
+Chicago,Fecha 5,Local,0
+Belgrano,Fecha 6,Visitante,4
+Union,Fecha 7,Local,3
+San Lorenzo,Fecha 8,Visitante,2
+Racing,Fecha 9,Local,3
+Independiente,Fecha 10,Visitante,0

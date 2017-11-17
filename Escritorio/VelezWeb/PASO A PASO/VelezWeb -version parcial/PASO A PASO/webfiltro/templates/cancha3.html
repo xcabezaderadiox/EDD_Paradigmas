@@ -1,0 +1,25 @@
+{% extends "basefortinero.html" %}
+
+{% block title %}Filtro{% endblock %}
+
+{% block page_content %}
+
+<form method="POST" action="/filtro"> 
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"style="background-color: grey">FIXTURE</div>
+
+<table class="table" style="background-color: black">
+  <tr>
+    <td><font color="white">{{ equipo }} </font></td>
+    <td><font color="white">{{ fecha }} </font></td>
+    <td><font color="white">{{ cancha }} </font></td>
+  </tr>
+</table>
+</form>
+
+{% endblock %}
+
+
+
+

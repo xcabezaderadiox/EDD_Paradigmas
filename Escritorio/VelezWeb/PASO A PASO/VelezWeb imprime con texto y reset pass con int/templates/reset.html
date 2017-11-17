@@ -1,0 +1,13 @@
+{% extends "basefortinero.html" %}
+
+{% block title %}Reestablecer Contraseña{% endblock %}
+
+{% block page_content %}
+<form method="POST" action="/reset">
+    {{ form.csrf_token }}
+    {{ form.old.label }} {{ form.old(size=20) }}
+    {{ form.csrf_token }}
+    {{ form.new.label }} {{ form.new(size=20) }}
+    <input type="submit" value="Valide">
+</form>
+{% endblock %}

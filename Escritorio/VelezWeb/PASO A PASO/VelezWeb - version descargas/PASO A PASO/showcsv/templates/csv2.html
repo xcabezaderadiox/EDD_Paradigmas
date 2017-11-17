@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Fixture{% endblock %}
+
+{% block page_content %}
+
+
+
+
+<ul class="tabla">
+    
+        {% for line in commentList %}
+            <li> <b>{{ line[0] }}</b> <b>{{ line[1] }}</b> {{ line[2] }} </li><br>
+        {% endfor %}
+
+</ul>
+
+{% endblock %}

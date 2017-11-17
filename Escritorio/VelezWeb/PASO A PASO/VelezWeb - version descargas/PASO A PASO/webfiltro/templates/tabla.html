@@ -1,0 +1,22 @@
+{% extends "basefortinero.html" %}
+
+{% block title %}Fixture{% endblock %}
+
+{% block page_content %}
+
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"style="background-color: grey">FIXTURE</div>
+
+<table class="table" style="background-color: black">
+
+{% for line in commentList %}
+  <tr>
+    <td><font color="white">{{ line[0] }}</font></td>
+    <td><font color="white">{{ line[1] }}</font></td>
+    <td><font color="white">{{ line[2] }}</font></td>
+  </tr>
+{% endfor %}
+</table>
+{% endblock %}

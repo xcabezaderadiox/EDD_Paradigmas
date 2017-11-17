@@ -1,0 +1,16 @@
+<form method="POST"accion="/formulario2">
+
+
+<form action="/login" method="POST">
+    {{ form.csrf_token }}
+
+    {{ form.name.label }}
+    {{ form.name(size=20) }}
+
+    {{ form.password.label }} 
+    {{ form.password(size=20) }}
+
+    <input type="submit" value="Log in">
+
+<a href="http://127.0.0.1:5000/register">Si no tiene usuario haga click aqui</a>
+</form>
